@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 4000; // or another port if you prefer
+const port = process.env.PORT || 4000; // or another port if you prefer
 const bodyParser = require("body-parser");
 const { getStoredPosts, storePosts } = require("./data/posts");
 
